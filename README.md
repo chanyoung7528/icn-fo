@@ -10,6 +10,8 @@ icn-fo/
 │   ├── layout.tsx    # 루트 레이아웃
 │   ├── page.tsx      # 홈페이지
 │   └── providers.tsx # 전역 프로바이더
+├── pages/            # 페이지 컴포넌트
+│   └── home/         # 홈페이지 컴포넌트
 ├── widgets/          # 복합 UI 블록
 │   └── home/         # 홈페이지 위젯
 ├── features/         # 비즈니스 기능 (준비됨)
