@@ -1,0 +1,73 @@
+@theme {
+  /* Brand Color */
+  --color-brand-100: #003b41;
+  --color-brand-90: #005961;
+  --color-brand-80: #007782;
+  --color-brand-70: #0c9dab;
+  --color-brand-60: #2bb3bf;
+  --color-brand-50: #5bc9d4;
+  --color-brand-40: #83d7df;
+  --color-brand-30: #abe6eb;
+  --color-brand-20: #ceeef1;
+  --color-brand-10: #e7f8fa;
+
+  /* Blue Color  */
+  --color-blue-100: #2f4552;
+  --color-blue-90: #3e5b6c;
+  --color-blue-80: #50758b;
+  --color-blue-70: #6696b2;
+  --color-blue-60: #70a5c4;
+  --color-blue-50: #8db7d0;
+  --color-blue-40: #9fc3d7;
+  --color-blue-30: #bdd6e4;
+  --color-blue-20: #d3e3ed;
+  --color-blue-10: #f1f6f9;
+
+  /* Orange Color  */
+  --color-orange-100: #6b311f;
+  --color-orange-90: #8c4029;
+  --color-orange-80: #b55335;
+  --color-orange-70: #e86a43;
+  --color-orange-60: #ff754a;
+  --color-orange-50: #ff916e;
+  --color-orange-40: #ffa386;
+  --color-orange-30: #ffc0ac;
+  --color-orange-20: #ffd4c7;
+  --color-orange-10: #fff1ed;
+
+  /* Brown Color  */
+  --color-brown-100: #573c29;
+  --color-brown-90: #724f35;
+  --color-brown-80: #946645;
+  --color-brown-70: #bd8358;
+  --color-brown-60: #d09061;
+  --color-brown-50: #d9a681;
+  --color-brown-40: #e0b595;
+  --color-brown-30: #e9ccb6;
+  --color-brown-20: #f0ddce;
+  --color-brown-10: #faf4ef;
+
+  /* Yellow Color  */
+  --color-yellow-100: #6b4800;
+  --color-yellow-90: #8c5e00;
+  --color-yellow-80: #b57900;
+  --color-yellow-70: #e89c00;
+  --color-yellow-60: #ffab00;
+  --color-yellow-50: #ffbc33;
+  --color-yellow-40: #ffc754;
+  --color-yellow-30: #ffd88a;
+  --color-yellow-20: #ffe5b0;
+  --color-yellow-10: #fff7e6;
+
+  /* Neutral Color */
+  --color-gray-100: #222222;
+  --color-gray-90: #454444;
+  --color-gray-80: #626261;
+  --color-gray-70: #7e7e7d;
+  --color-gray-60: #999898;
+  --color-gray-50: #b1b1b0;
+  --color-gray-40: #d3d3d3;
+  --color-gray-30: #e5e5e5;
+  --color-gray-20: #eeeeee;
+  --color-gray-10: #f8f8f8;
+}
