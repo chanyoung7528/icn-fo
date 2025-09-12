@@ -147,14 +147,15 @@ FSD 구조를 활용하여 다음 기능들을 개발할 수 있습니다:
 
 ### FSD 레이어별 범위
 
-| 범위       | 설명                    | 예시                                |
-| ---------- | ----------------------- | ----------------------------------- |
-| `app`      | Next.js App Router 관련 | `feat(app): 루트 레이아웃 수정`     |
-| `widgets`  | 복합 UI 블록            | `feat(widgets): 대시보드 위젯 추가` |
-| `features` | 비즈니스 기능           | `feat(features): 사용자 인증 기능`  |
-| `entities` | 비즈니스 엔티티         | `feat(entities): User 모델 추가`    |
-| `shared`   | 공통 리소스             | `fix(shared): utils 함수 버그 수정` |
-| `ui`       | UI 컴포넌트             | `feat(ui): Dialog 컴포넌트 추가`    |
+| 범위       | 설명                    | 예시                                  |
+| ---------- | ----------------------- | ------------------------------------- |
+| `app`      | Next.js App Router 관련 | `feat(app): 루트 레이아웃 수정`       |
+| `pages`    | 페이지 컴포넌트         | `feat(pages): 홈페이지 컴포넌트 추가` |
+| `widgets`  | 복합 UI 블록            | `feat(widgets): 대시보드 위젯 추가`   |
+| `features` | 비즈니스 기능           | `feat(features): 사용자 인증 기능`    |
+| `entities` | 비즈니스 엔티티         | `feat(entities): User 모델 추가`      |
+| `shared`   | 공통 리소스             | `fix(shared): utils 함수 버그 수정`   |
+| `ui`       | UI 컴포넌트             | `feat(ui): Dialog 컴포넌트 추가`      |
 
 ### 브랜치 네이밍
 
@@ -204,6 +205,13 @@ refactor(widgets): 홈페이지 컴포넌트 구조 개선
 - UI 로직을 별도 함수로 분리
 - Props 타입 정의 개선
 - 컴포넌트 재사용성 향상
+
+# 페이지 컴포넌트 추가
+feat(pages): 대시보드 페이지 컴포넌트 구현
+
+- 대시보드 메인 레이아웃 설계
+- 사용자 정보 표시 영역 추가
+- 반응형 디자인 적용
 ```
 
 #### ❌ 나쁜 예시

@@ -1,0 +1,12 @@
+export { default as BottomIcon } from './Bottom';
+export { default as Bottom2Icon } from './Bottom2';
+export { default as DashLeftIcon } from './DashLeft';
+export { default as DashRightIcon } from './DashRight';
+export { default as LeftIcon } from './Left';
+export { default as Left2Icon } from './Left2';
+export { default as RightIcon } from './Right';
+export { default as Right2Icon } from './Right2';
+export { default as SmallBottomIcon } from './SmallBottom';
+export { default as SmallTopIcon } from './SmallTop';
+export { default as TopIcon } from './Top';
+export { default as Top2Icon } from './Top2';

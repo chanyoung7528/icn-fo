@@ -1,0 +1,49 @@
+/* @media (min-width: 280px) {
+  html {
+    font-size: 46.6667%;
+  }
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 53.3333%;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 393px) {
+  html {
+    font-size: 65.6%;
+  }
+}
+@media (min-width: 410px) {
+  html {
+    font-size: 68.3333%;
+  }
+}
+@media (min-width: 412px) {
+  html {
+    font-size: 68.6667%;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 69%;
+  }
+}
+@media (min-width: 450px) {
+  html {
+    font-size: 75%;
+  }
+} */
+
+html {
+  font-size: clamp(7.467px, calc(100vw / 375 * 10), 12px) !important;
+}

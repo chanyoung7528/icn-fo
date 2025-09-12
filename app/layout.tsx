@@ -1,4 +1,4 @@
-import "@/shared/assets/globals.css";
+import "@/shared/assets/styles/globals.css";
 import { Providers } from "./providers";
 
 export default function RootLayout({

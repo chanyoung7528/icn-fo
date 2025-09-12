@@ -1,4 +1,4 @@
-import "@/shared/assets/globals.css";
+import "@/shared/assets/styles/globals.css";
 
 import type { Preview } from "@storybook/nextjs-vite";
 
