@@ -1,5 +1,5 @@
-import UIShowcase from "@/components/ui-showcase";
+import { HomePage } from "@/pages/home/HomePage";
 
 export default function Home() {
-  return <UIShowcase />;
+  return <HomePage />;
 }

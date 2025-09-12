@@ -1,15 +1,15 @@
-import { ClientProviders } from "./providers";
-import "@/styles/globals.css";
+import "@/shared/assets/globals.css";
+import { Providers } from "./providers";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html>
+    <html lang="ko">
       <body>
-        <ClientProviders>{children}</ClientProviders>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
