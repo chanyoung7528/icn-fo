@@ -1,0 +1,12 @@
+export { default as BellIcon } from './Bell';
+export { default as CancellistIcon } from './Cancellist';
+export { default as CardIcon } from './Card';
+export { default as ChatCenteredTextIcon } from './ChatCenteredText';
+export { default as ChatsIcon } from './Chats';
+export { default as ClipboardTextIcon } from './ClipboardText';
+export { default as EventIcon } from './Event';
+export { default as HeadsetIcon } from './Headset';
+export { default as LinkIcon } from './Link';
+export { default as Notice1Icon } from './Notice1';
+export { default as TimeIcon } from './Time';
+export { default as WalletIcon } from './Wallet';
