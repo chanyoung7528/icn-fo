@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { cn } from '@/shared/lib/utils';
-import { Button, buttonVariants } from '@/shared/ui';
+import { Button, buttonVariants, type ButtonVariant } from '@/shared/ui/Button';
 import { ChevronLeftIcon, ChevronRightIcon, MoreHorizontalIcon } from 'lucide-react';
 
 function Pagination({ className, ...props }: React.ComponentProps<'nav'>) {
@@ -36,7 +36,7 @@ function PaginationLink({ className, isActive, size = 'icon', ...props }: Pagina
       data-active={isActive}
       className={cn(
         buttonVariants({
-          variant: isActive ? 'outline' : 'ghost',
+          variant: (isActive ? 'outline' : 'primary') as ButtonVariant,
           size,
         }),
         className

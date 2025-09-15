@@ -1,5 +1,6 @@
-@import "tailwindcss";
-@import "./palette.css";
-@import "./typography.css";
-@import "./font-size.css";
-@import "./font.css";
+@import 'tailwindcss';
+@import './palette.css';
+@import './typography.css';
+@import './font-size.css';
+@import './font.css';
+@import './radius.css';
