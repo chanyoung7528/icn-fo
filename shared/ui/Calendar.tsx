@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { cn } from '@/shared/lib/utils';
-import { Button, buttonVariants } from '@/shared/ui/Button';
+import { Button, buttonVariants, type ButtonVariant } from '@/shared/ui/Button';
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { DayButton, DayPicker, getDefaultClassNames } from 'react-day-picker';
 
@@ -11,12 +11,12 @@ function Calendar({
   classNames,
   showOutsideDays = true,
   captionLayout = 'label',
-  buttonVariant = 'ghost',
+  buttonVariant = 'primary',
   formatters,
   components,
   ...props
 }: React.ComponentProps<typeof DayPicker> & {
-  buttonVariant?: React.ComponentProps<typeof Button>['variant'];
+  buttonVariant?: React.ComponentProps<typeof Button>['color'];
 }) {
   const defaultClassNames = getDefaultClassNames();
 
@@ -40,12 +40,11 @@ function Calendar({
         month: cn('flex flex-col w-full gap-4', defaultClassNames.month),
         nav: cn('flex items-center gap-1 w-full absolute top-0 inset-x-0 justify-between', defaultClassNames.nav),
         button_previous: cn(
-          buttonVariants({ variant: buttonVariant }),
           'size-(--cell-size) aria-disabled:opacity-50 p-0 select-none',
           defaultClassNames.button_previous
         ),
         button_next: cn(
-          buttonVariants({ variant: buttonVariant }),
+          buttonVariants({ variant: buttonVariant as ButtonVariant }),
           'size-(--cell-size) aria-disabled:opacity-50 p-0 select-none',
           defaultClassNames.button_next
         ),
@@ -135,8 +134,9 @@ function CalendarDayButton({ className, day, modifiers, ...props }: React.Compon
   return (
     <Button
       ref={ref}
-      variant="ghost"
-      size="icon"
+      variant="secondary"
+      appearance="outline"
+      size="default"
       data-day={day.date.toLocaleDateString()}
       data-selected-single={
         modifiers.selected && !modifiers.range_start && !modifiers.range_end && !modifiers.range_middle
