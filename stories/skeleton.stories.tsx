@@ -1,13 +1,12 @@
-import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-
-import { Skeleton } from "@/shared/ui/skeleton";
+import { Skeleton } from '@/shared/ui/Skeleton';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
 const meta: Meta<typeof Skeleton> = {
-  title: "shadcn/Skeleton",
+  title: 'shadcn/Skeleton',
   component: Skeleton,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
-    className: { control: "text" },
+    className: { control: 'text' },
   },
 };
 
@@ -16,7 +15,7 @@ type Story = StoryObj<typeof Skeleton>;
 
 export const Default: Story = {
   args: {
-    className: "w-[100px] h-[20px] rounded-full",
+    className: 'w-[100px] h-[20px] rounded-full',
   },
 };
 
