@@ -1,15 +1,14 @@
-import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-
-import { Checkbox } from "@/shared/ui/checkbox";
+import { Checkbox } from '@/shared/ui/Checkbox';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
 const meta: Meta<typeof Checkbox> = {
-  title: "shadcn/Checkbox",
+  title: 'shadcn/Checkbox',
   component: Checkbox,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
-    checked: { control: "boolean" },
-    disabled: { control: "boolean" },
-    required: { control: "boolean" },
+    checked: { control: 'boolean' },
+    disabled: { control: 'boolean' },
+    required: { control: 'boolean' },
   },
 };
 
@@ -18,7 +17,7 @@ type Story = StoryObj<typeof Checkbox>;
 
 export const Default: Story = {
   args: {
-    id: "terms",
+    id: 'terms',
   },
   render: (args) => (
     <div className="flex items-center space-x-2">
@@ -35,7 +34,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    id: "terms-disabled",
+    id: 'terms-disabled',
     disabled: true,
   },
   render: (args) => (
@@ -53,7 +52,7 @@ export const Disabled: Story = {
 
 export const Checked: Story = {
   args: {
-    id: "terms-checked",
+    id: 'terms-checked',
     checked: true,
   },
   render: (args) => (
