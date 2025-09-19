@@ -1,0 +1,203 @@
+.mainVisual {
+  position: relative;
+
+  &.hasSubList .wrapMainSwiper .swiperMain .slideItemInner {
+    bottom: 27.8rem;
+  }
+
+  .wrapMainSwiper {
+    height: 62.4rem;
+    display: flex;
+    background-color: var(--color-gray-80);
+
+    .swiperMain {
+      height: 62.4rem;
+      position: relative;
+      width: calc(100vw - 5.5rem);
+      margin-left: 0;
+      margin-right: 0;
+
+      .mainSlideItem {
+        display: flex;
+        height: 59rem;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 6.2rem;
+
+        .slideItemInner {
+          padding-bottom: 2.2rem;
+          padding-left: 4rem;
+          white-space: pre-line;
+
+          .textMain {
+            max-height: 5.74rem;
+            overflow: hidden;
+            font-size: 2.2rem;
+            line-height: 2.86rem;
+            font-weight: 400;
+            color: white;
+            text-transform: uppercase;
+          }
+
+          .textSub {
+            margin-top: 0.7rem;
+            max-height: 8.4rem;
+            overflow: hidden;
+            font-size: 3.6rem;
+            line-height: 4.2rem;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+
+        .wrapMainSub {
+          z-index: 2;
+          display: flex;
+          width: 100%;
+          scroll-snap-type: x mandatory;
+          flex-wrap: nowrap;
+          align-items: flex-start;
+          gap: 1.1rem;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          padding: 0 4rem;
+
+          .subItem {
+            display: flex;
+            width: 9.2rem;
+            cursor: pointer;
+            scroll-snap-align: start;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+
+            .subItemImg {
+              width: 9.2rem;
+              border-radius: 8px;
+              object-fit: contain;
+            }
+
+            .subItemText {
+              width: 9.2rem;
+              overflow: hidden;
+              text-align: center;
+              font-size: 1.3rem;
+              line-height: 150%;
+              font-weight: 400;
+              text-overflow: ellipsis;
+              white-space: pre-wrap;
+              color: var(--color-gray-40);
+            }
+          }
+        }
+      }
+    }
+
+    .wrapSideArea {
+      position: relative;
+      width: 5.5rem;
+      background: white;
+      opacity: 1;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        bottom: 7.8rem;
+        left: -4.9rem;
+        background-image: radial-gradient(circle 1rem at 0px 0, transparent 0, transparent 5rem, #ffffff 5.1rem);
+      }
+
+      .wrapperSwiperScroll {
+        position: absolute;
+        top: 24.5rem;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+
+        .activeSlide,
+        .totalSlides {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) rotate(-90deg);
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 150%;
+        }
+
+        .activeSlide {
+          left: -2.6rem;
+          color: var(--color-gray-100);
+        }
+
+        .totalSlides {
+          right: -2.6rem;
+          color: var(--color-gray-50);
+        }
+
+        .wrapSwiperScroll {
+          width: 20rem;
+          height: 0.2rem;
+          background-color: var(--color-gray-20);
+
+          // Swiper scrollbar specific styles
+          :global(.swiper-scrollbar-horizontal) {
+            width: 20rem !important;
+            height: 0.2rem !important;
+            background-color: var(--color-gray-20) !important;
+            position: absolute !important;
+            bottom: 0 !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+          }
+
+          :global(.swiper-scrollbar-drag) {
+            background-color: var(--color-gray-100) !important;
+            height: 0.2rem !important;
+            top: 0rem !important;
+            position: relative !important;
+            border-radius: var(--swiper-scrollbar-border-radius, 10px) !important;
+            left: 0 !important;
+            top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // State styles
+  .loadingState,
+  .errorState,
+  .emptyState {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62.4rem;
+    background-color: var(--color-gray-10);
+    font-size: 1.6rem;
+    color: var(--color-gray-60);
+  }
+
+  .skeleton {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-gray-20) 25%, var(--color-gray-10) 50%, var(--color-gray-20) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+}

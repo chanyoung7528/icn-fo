@@ -1,27 +1,27 @@
 /* button radius */
 
 @theme {
-  --btn-rad-xl: 1rem;
-  --btn-rad-lg: 0.8rem;
-  --btn-rad-md: 0.6rem;
-  --btn-rad-sm: 0.4rem;
-  --btn-rad-xsm: 0.3rem;
+  --rad-xl: 1rem;
+  --rad-lg: 0.8rem;
+  --rad-md: 0.6rem;
+  --rad-sm: 0.4rem;
+  --rad-xsm: 0.3rem;
 }
 
 @layer utilities {
-  .rounded-btn-xl {
-    border-radius: var(--btn-rad-xl);
+  .rounded-xl {
+    border-radius: var(--rad-xl);
   }
-  .rounded-btn-lg {
-    border-radius: var(--btn-rad-lg);
+  .rounded-lg {
+    border-radius: var(--rad-lg);
   }
-  .rounded-btn-md {
-    border-radius: var(--btn-rad-md);
+  .rounded-md {
+    border-radius: var(--rad-md);
   }
-  .rounded-btn-sm {
-    border-radius: var(--btn-rad-sm);
+  .rounded-sm {
+    border-radius: var(--rad-sm);
   }
-  .rounded-btn-xsm {
-    border-radius: var(--btn-rad-xsm);
+  .rounded-xsm {
+    border-radius: var(--rad-xsm);
   }
 }

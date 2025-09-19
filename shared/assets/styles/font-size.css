@@ -47,3 +47,29 @@
 html {
   font-size: clamp(7.467px, calc(100vw / 375 * 10), 12px) !important;
 }
+
+@theme {
+  --font-size-xsm: 1.2rem; /* 예: 10px */
+  --font-size-sm: 1.3rem; /* 예: 12px */
+  --font-size-md: 1.4rem; /* 예: 16px */
+  --font-size-lg: 1.5rem; /* 예: 20px */
+  --font-size-xl: 1.6rem; /* 예: 24px */
+}
+
+@layer utilities {
+  .text-xsm {
+    font-size: var(--font-size-xsm);
+  }
+  .text-sm {
+    font-size: var(--font-size-sm);
+  }
+  .text-md {
+    font-size: var(--font-size-md);
+  }
+  .text-lg {
+    font-size: var(--font-size-lg);
+  }
+  .text-xl {
+    font-size: var(--font-size-xl);
+  }
+}
